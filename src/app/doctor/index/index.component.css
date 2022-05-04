@@ -1,0 +1,26 @@
+.box {
+    color: aliceblue;
+    background-image: linear-gradient(to right,rgb(205, 145, 255),rgba(255,0,0,0));
+    padding: 50px;
+    width: 1200px;
+    border: 1px solid rgb(0, 0, 0) ;
+    
+}
+table{
+    border:border-collapse;
+    width: 1200px;
+    margin-left: 0px;
+    border: 1.5px solid rgb(0, 0, 0);
+}
+th, td{
+    padding: 5px;
+    font-size: small;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.btn{
+    
+    font-size:12px;
+    float: right;
+    margin-right: 5px;
+}
