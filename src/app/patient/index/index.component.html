@@ -34,6 +34,9 @@
        
       <th width="290px">Action</th>
         </tr>
+        <ng-container>
+          <mat-spinner *ngIf="loading" id="loading"></mat-spinner>
+        </ng-container>
         <tr *ngFor="let patient of patients">
           <!-- <td>{{ patient.id }}</td> -->
           <td>{{patient.PatientId}}</td>

@@ -12,6 +12,7 @@ import { AddpatientComponent } from 'src/app/patient/addpatient/addpatient.compo
 })
 export class IndexComponent implements OnInit {
   doctors: Doctor[] = [];
+  loading: boolean=false;
 
   constructor(public doctorService: DoctorService,
     private route: ActivatedRoute,
@@ -27,10 +28,12 @@ export class IndexComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.loading=true;
     this.doctorService.getAll().subscribe((data: Doctor[])=>{
-     
+    this.loading=false;
       this.doctors = data;
       console.log(this.doctors);
+
   })
 };
   
